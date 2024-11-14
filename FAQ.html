@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <!-- aos library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- header css  -->
+    <link rel="stylesheet" href="css/Index.css">
+    <style>
+        /* Custom style for active accordion */
+        .accordion-button {
+            color: #ad9551;
+            /* Text color when collapsed */
+            font-weight: 500;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #ad9551;
+            /* Same background color when opened */
+            color: white;
+            /* Change text color when the section is opened */
+        }
+
+        .accordion,
+        .accordion-item {
+            border: 1px solid #e5d29c;
+        }
+        a {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+
+<body>
+     <!-- header  -->
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+      <div class="container-fluid">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+          <span class="text-light me-auto">
+            <i class="bi bi-telephone"></i> +92-300-800345
+          </span>
+          <span class="text-light text-center flex-grow-1">
+            <i class="bi bi-envelope"></i> EmporiumJewellery@gmail.com
+          </span>
+          <ul class="list-unstyled d-flex mb-0">
+            <li class="me-3">
+              <a href="#" class="text-light"><i class="bi bi-heart"></i></a>
+            </li>
+            <li>
+              <a href="#" class="text-light"><i class="bi bi-bag"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <header style="padding-top: 60px;"> <!-- To account for fixed navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="images/Index/logo.png" alt="Logo" height="80" width="100">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link  ms-3">HOME</a>
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle ms-3 active" data-bs-toggle="dropdown"
+                  aria-expanded="false">PRODUCTS</a>
+                <ul class="dropdown-menu">
+                  <li><a href="Diamond_products.html" class="dropdown-item">DIAMOND</a></li>
+                  <li><a href="Amber_products.html" class="dropdown-item">AMBER</a></li>
+                  <li><a href="Amethyst_products.html" class="dropdown-item">AMETHYST</a></li>
+                  <li><a href="Home_Decor_products.html" class="dropdown-item">DECORATIVE PRODUCTS</a></li>
+                </ul>
+              </div>
+              <a href="special-offers.html" class="nav-item nav-link ms-3">SPECIAL OFFERS</a>
+              <a href="NewArrival.html" class="nav-item nav-link ms-3">NEW ARRIVAL</a>
+              <a href="about.html" class="nav-item nav-link ms-3">ABOUT US</a>
+              <a href="contact_us.html" class="nav-item nav-link ms-3">CONTACT US</a>
+              <a href="comparison.html" class="nav-item nav-link ms-3">COMPARISON</a>
+            </div>
+  
+            <div class="d-flex align-items-center ms-3">
+              <div class="search">
+                <input type="text" class="form-control me-2" placeholder="Search..">
+                <button class="btn" type="button">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+   <!-- Header end  -->
+    <div class="container mt-5">
+        <h2 class="text-center fs-1 mb-3">FAQ</h2>
+
+
+        <div class=" accordion" id="accordionExample">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        What types of crystals do you offer?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We offer a wide variety of crystals, including but not limited to Diamond, Amber, Amethyst,
+                        Quartz, and more. You can browse our collection by selecting the specific crystal category.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can I navigate the website?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Our website features a user-friendly menu at the top of each page, allowing you to easily access
+                        different sections such as Home, About Us, Special Offers, New Arrivals, Products, and Contact
+                        Us.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can I view detailed information about each product?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes! Each product has a brief summary displayed on its page. For more in-depth information, you
+                        can download a detailed Word document that outlines the features.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Is there a way to compare different products?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Absolutely! Our site allows you to compare various products side by side, making it easier for
+                        you to make informed decisions.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        What are the benefits of using crystals?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Crystals are believed to enhance the body's natural healing abilities, reduce stress, and
+                        promote emotional and spiritual well-being. Each crystal is thought to have its own unique
+                        properties and energies.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Are the crystals offered in jewelry form?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes, we offer a range of beautiful jewelry pieces made from various crystals, in addition to raw
+                        and uncut specimens for home decor.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        How can I find special offers or new arrivals?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        You can find special offers and new arrivals by visiting the respective pages on our website. We
+                        regularly update these sections, so be sure to check back often!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        How can I contact you for more information?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        You can reach us through our “Contact Us” page, where you'll find our email address. Clicking
+                        the email will open your local mail client for easy communication.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Is your shop location available online?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes, our shop location is displayed on the “Contact Us” page using Google Maps for easy
+                        navigation.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        Do you provide international shipping?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes, we offer international shipping! Please check our shipping policy for more details on costs
+                        and delivery times.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 11 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        Can I return a product if I am not satisfied?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes, we have a return policy in place. If you're not satisfied with your purchase, please refer
+                        to our Return Policy section for instructions on how to return your product.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 12 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        How do I know if a crystal is authentic?
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We source our crystals from reputable suppliers and provide detailed descriptions and images to
+                        ensure authenticity. If you have specific concerns, feel free to contact us for more
+                        information.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <!-- Footer start -->
+     <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4 text-center">
+          <div class="row">
+            <!-- Company info -->
+    
+            <div class="col-lg-3 ">
+    
+              <div class="d-flex align-items-center justify-content-center mx-auto" style="width: 100px; height: 80px;">
+                <img src="images/Index/logo2.png" height="70" alt="" loading="lazy" />
+              </div>
+    
+              <p class="text-center">The Diamond Collection illustrates a tale of legacy and passion. Our heritage
+                draws its roots from pre-partition times in Delhi, India, where our ancestors attained fame for
+                their craftsmanship in gold and diamond jewelry making.
+              </p>
+    
+            </div>
+    
+    
+            <!-- social media -->
+            <div class="col-lg-3 mb-0 mt-2 text-center footer_text">
+              <h5 class="text-uppercase mb-2">SERVICES</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3"> <a href="#" class="text-dark text-start">
+                    Bespoke Designing</a></li>
+                <li class="mb-3"> <a href="#" class="text-dark text-start">
+                    Free Instant Cleaning Service</a></li>
+                <li class="mb-3"> <a href="#" class="text-dark text-start">
+                    Jewellery Polishing Services</a></li>
+                <li class="mb-3"> <a href="#" class="text-dark text-start">
+                    Jewellery Repairing Services</a></li>
+    
+              </ul>
+            </div>
+    
+            <!-- quick links -->
+            <div class="col-lg-3 mb-4 mt-2  text-center">
+              <h5 class="text-uppercase mb-4">CONTACT US</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p><i class="fas fa-phone pe-2" style="color: #ad9551;"></i>+92-300-800345</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope pe-2 mb-0 " style="color: #ad9551;"></i>EmporiumJewellery@gmail.com</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-map-marker-alt pe-2" style="color: #ad9551;"></i>Warsaw streeet G-23,millenium mall,
+                    Poland</p>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="col-lg-3 mb-4 mt-2  text-center footer_text">
+              <h5 class="text-uppercase mb-3">Quick Links</h5>
+              <ul class="list-unstyled mb-0 ">
+                <li class="mb-3"> <a href="Sitemap.html" class="text-dark">SIteMap</a></li>
+                <li class="mb-3"> <a href="about.html" class="text-dark">About Us</a></li>
+                <li class="mb-3"> <a href="contact_us.html" class="text-dark">Contact Us</a></li>
+                <li class="mb-3"> <a href="comparison.html" class="text-dark">Comparison</a></li>
+                <li class="mb-3"> <a href="FAQ.html" class="text-dark active"> FAQ</a></li>
+    
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="text-center p-3 bg-dark text-white">Copyright &copy;. All Right Reserved. Emporium Crystal Jewellery
+        </div>
+    
+      </footer>
+
+</body>
+
+</html>

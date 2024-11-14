@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special offers</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <!-- aos library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/pro_style.css">
+    <!-- header css  -->
+    <link rel="stylesheet" href="css/Index.css">
+    <style>
+        /* Custom CSS */
+        .offers {
+            background-image: url('images/Assets/special_offer_bg.png');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            /* align-items: start; */
+            /* justify-content: center; */
+
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <span class="text-light me-auto">
+                    <i class="bi bi-telephone"></i> +92-300-800345
+                </span>
+                <span class="text-light text-center flex-grow-1">
+                    <i class="bi bi-envelope"></i> EmporiumJewellery@gmail.com
+                </span>
+                <ul class="list-unstyled d-flex mb-0">
+                    <li class="me-3">
+                        <a href="#" class="text-light"><i class="bi bi-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light"><i class="bi bi-bag"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header style="padding-top: 60px;"> <!-- To account for fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="images/Index/logo.png" alt="Logo" height="80" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link  ms-3">HOME</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle ms-3 " data-bs-toggle="dropdown"
+                                aria-expanded="false">PRODUCTS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Diamond_products.html" class="dropdown-item">DIAMOND</a></li>
+                                <li><a href="Amber_products.html" class="dropdown-item">AMBER</a></li>
+                                <li><a href="Amethyst_products.html" class="dropdown-item">AMETHYST</a></li>
+                                <li><a href="Home_Decor_products.html" class="dropdown-item">DECORATIVE PRODUCTS</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="special-offers.html" class="nav-item nav-link ms-3 active">SPECIAL OFFERS</a>
+                        <a href="NewArrival.html" class="nav-item nav-link ms-3">NEW ARRIVAL</a>
+                        <a href="about.html" class="nav-item nav-link ms-3">ABOUT US</a>
+                        <a href="contact_us.html" class="nav-item nav-link ms-3">CONTACT US</a>
+                        <a href="comparison.html" class="nav-item nav-link ms-3">COMPARISON</a>
+                    </div>
+
+                    <div class="d-flex align-items-center ms-3">
+                        <div class="search">
+                            <input type="text" class="form-control me-2" placeholder="Search..">
+                            <button class="btn" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Header end  -->
+
+    <!-- Img with heading  -->
+    <div class="offers ">
+
+    </div>
+
+    <!-- Filterable  -->
+    <main class="main-container">
+        <div class="button-group mt-5">
+            <a href="#">
+                <button class="buton-active" data-filter="#item-necklace">All</button>
+            </a>
+            <a href="#Amethyst_Bracelete"> <button class="buton"
+                    data-filter="#product-container-Amethyst">Amethyst</button> </a>
+            <a href="#Diamond_Bracelete"><button class="buton"
+                    data-filter="#product-container-Diamond">Diamond</button></a>
+            <a href="#Amber_Bracelete"> <button class="buton" data-filter="">Amber</button></a>
+        </div>
+    </main>
+
+    <div class="container">
+        <div class="row mt-5 mb-2" id="product-container-Amethyst">
+            <h3 class="text-center" id="Amethyst_Bracelete">Amethyst Bracelete</h3>
+            <!-- Product cards will be dynamically inserted here -->
+        </div>
+
+        <div class="row mt-5 mb-2" id="product-container-Diamond">
+            <h3 class="text-center" id="Diamond_Bracelete">Diamond Bracelete</h3>
+            <!-- Product cards will be dynamically inserted here -->
+        </div>
+
+        <div class="row mt-5 mb-2" id="product-container-Amber">
+            <h3 class="text-center" id="Amber_Bracelete">Amber Bracelete</h3>
+            <!-- Product cards will be dynamically inserted here -->
+        </div>
+    </div>
+    <!-- Modal Code start   -->
+    <div class="modal fade" id="TYS" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="modalLabel">Thank You for Shopping</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div></div>
+    <!-- Modal Code end   -->
+
+    <!-- Footer start  -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4 text-center">
+            <div class="row">
+                <!-- Company info -->
+
+                <div class="col-lg-3 ">
+
+                    <div class="d-flex align-items-center justify-content-center mx-auto"
+                        style="width: 100px; height: 80px;">
+                        <img src="images/Index/logo2.png" height="70" alt="" loading="lazy" />
+                    </div>
+
+                    <p class="text-center">The Diamond Collection illustrates a tale of legacy and passion. Our heritage
+                        draws its roots from pre-partition times in Delhi, India, where our ancestors attained fame for
+                        their craftsmanship in gold and diamond jewelry making.
+                    </p>
+
+                </div>
+
+
+                <!-- social media -->
+                <div class="col-lg-3 mb-0 mt-2 text-center footer_text">
+                    <h5 class="text-uppercase mb-2">SERVICES</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3"> <a href="#" class="text-dark text-start">
+                                Bespoke Designing</a></li>
+                        <li class="mb-3"> <a href="#" class="text-dark text-start">
+                                Free Instant Cleaning Service</a></li>
+                        <li class="mb-3"> <a href="#" class="text-dark text-start">
+                                Jewellery Polishing Services</a></li>
+                        <li class="mb-3"> <a href="#" class="text-dark text-start">
+                                Jewellery Repairing Services</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- quick links -->
+                <div class="col-lg-3 mb-4 mt-2  text-center">
+                    <h5 class="text-uppercase mb-4">CONTACT US</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p><i class="fas fa-phone pe-2" style="color: #ad9551;"></i>+92-300-800345</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-envelope pe-2 mb-0 "
+                                    style="color: #ad9551;"></i>EmporiumJewellery@gmail.com</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-map-marker-alt pe-2" style="color: #ad9551;"></i>Warsaw streeet
+                                G-23,millenium mall,
+                                Poland</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 mb-4 mt-2  text-center footer_text">
+                    <h5 class="text-uppercase mb-3">Quick Links</h5>
+                    <ul class="list-unstyled mb-0 ">
+                        <li class="mb-3"> <a href="Sitemap.html" class="text-dark">SIteMap</a></li>
+                        <li class="mb-3"> <a href="about.html" class="text-dark">About Us</a></li>
+                        <li class="mb-3"> <a href="contact_us.html" class="text-dark">Contact Us</a></li>
+                        <li class="mb-3"> <a href="comparison.html" class="text-dark">Comparison</a></li>
+                        <li class="mb-3"> <a href="FAQ.html" class="text-dark"> FAQ</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center p-3 bg-dark text-white">Copyright &copy;. All Right Reserved. Emporium Crystal Jewellery
+        </div>
+
+    </footer>
+    <!-- Footer end  -->
+
+    <script>
+        var productData = {
+            "productsA": [
+                {
+                    //pro 1
+                    "overlayHeading": "Amethyst and Diamond 259.00 Carat Bracelet",
+                    "discount": "30%",
+                    "title": "Amethyst and Diamond 259.00 Carat Bracelet",
+                    "shortDescription": `Grab everyone's attention with this 18 karat yellow gold bracelet comprised of 259 carats of carved amethyst beads.`,
+                    "downloadFile": "document/Amethyst/Amethyst and Diamond 259.00 Carat Bracelet.docx",
+                    "downloadFileName": "Amethyst and Diamond 259.00 Carat Bracelet.docx",
+                    "image": "images/Amethyst/Amethyst and Diamond 259.00 Carat Bracelet.webp",
+                    "category": "Amethyst",
+                    "price": "$3080",
+                    "strike": "$4400",
+                },
+                {
+                    //pro2
+                    "overlayHeading": "Amethyst 500.88 Carat Bracelet",
+                    "discount": "30%",
+                    "title": "Amethyst 500.88 Carat Bracelet",
+                    "shortDescription": `Definitely a conversation piece, this bold 18 karat yellow gold Amethyst bracelet`,
+                    "downloadFile": "document/Amethyst/Amethyst 500.88 Carat Bracelet.docx",
+                    "downloadFileName": "Amethyst 500.88 Carat Bracelet.docx",
+                    "image": "images/Amethyst/Amethyst 500.88 Carat Bracelet.webp",
+                    "category": "Amethyst",
+                    "price": "$3920",
+                    "strike": "$5600",
+                },
+                {
+                    // pro3
+                    "overlayHeading": "Natural Amethyst bracelet 18K White Gold Plated",
+                    "discount": "30%",
+                    "title": "Natural Amethyst bracelet 18K White Gold Plated",
+                    "shortDescription": `Amethyst bracelet 18K White Gold Plated, Amethyst Tennis Bracelet for Women, Wedding Bracelet, Gift For Her, Sterling Silver Tennis Bracelet`,
+                    "downloadFile": "document/Amethyst/Natural Amethyst bracelet 18K White Gold Plated.docx",
+                    "downloadFileName": "Natural Amethyst bracelet 18K White Gold Plated.docx",
+                    "image": "images/Amethyst/Natural Amethyst bracelet 18K White Gold Plated.png",
+                    "category": "Amethyst",
+                    "price": "$4200",
+                    "strike": "$6000",
+
+                },
+
+            ],
+
+            "productsD": [
+                {
+                    //pro 1
+                    "overlayHeading": "Dextera bracelet",
+                    "discount": "30%",
+                    "title": "Dextera bracelet",
+                    "shortDescription": `Intricate details meet bold construction in this modern bracelet from the Dextera family. `,
+                    "downloadFile": "document/Diamond/Dextera bracelet.docx",
+                    "downloadFileName": "Dextera bracelet.docx",
+                    "image": "images/Diamond/Dextera bracelet.jpg",
+                    "category": "Diamond",
+                    "price": "$3500",
+                    "strike": "$5000",
+                },
+                {
+                    // pro2
+                    "overlayHeading": "Gema bracelet",
+                    "discount": "30%",
+                    "title": "Gema bracelet",
+                    "shortDescription": `Mirroring the exquisite petals of Japans cherry blossom flower, this Gema bracelet is vividly captivating. `,
+                    "downloadFile": "document/Diamond/Gema bracelet.docx",
+                    "downloadFileName": "Gema bracelet.docx",
+                    "image": "images/Diamond/Gema bracelet.jpg",
+                    "category": "Diamond",
+                    "price": "$5600",
+                    "strike": "$8000",
+
+
+                },
+                {
+                    // pro3
+                    "overlayHeading": "Swan bracelet",
+                    "discount": "30%",
+                    "title": "Swan bracelet",
+                    "shortDescription": `With its elegant blend of materials, this exquisite bracelet is one that you’ll always cherish. `,
+                    "downloadFile": "document/Diamond/Swan bracelet.docx",
+                    "downloadFileName": "Swan bracelet.docx",
+                    "image": "images/Diamond/Swan bracelet.jpg",
+                    "category": "Diamond",
+                    "price": "$2940",
+                    "strike": "$4200",
+                },
+
+            ],
+
+            "productsAm": [
+                {
+                    // pro1
+                    "overlayHeading": "Modern Caged Amber Spheres Bracelet",
+                    "discount": "30%",
+                    "title": "Modern Caged Amber Spheres Bracelet",
+                    "shortDescription": `A modern and dainty bracelet. Featuring a number of small amber spheres caged within sterling 
+                    silver elements and linked with a minimal ball chain.This deli`,
+                    "downloadFile": "document/Amber/Modern Caged Amber Spheres Bracelet.docx",
+                    "downloadFileName": "Modern Caged Amber Spheres Bracelet.docx",
+                    "image": "images/Amber/Modern Caged Amber Spheres Bracelet.webp",
+                    "category": "Amber",
+                    "price": "$4900",
+                    "strike": "$7000",
+                },
+                {
+                    // pro2
+                    "overlayHeading": "Dark Amber Bead Bracelet with Polished Yellows",
+                    "discount": "30%",
+                    "title": "Dark Amber Bead Bracelet with Polished Yellow Accents",
+                    "shortDescription": `For Him & For Her, this dark cherry red/black amber bead bracelet is crafted with Amber spheres, finished with a luxury matte polish. Perfect from everyday to evening wear.`,
+                    "downloadFile": "document/Amber/Dark Amber Bead Bracelet with Polished Yellows.docx",
+                    "downloadFileName": "Dark Amber Bead Bracelet with Polished Yellows.docx",
+                    "image": "images/Amber/Dark Amber Bead Bracelet with Polished Yellows.webp",
+                    "category": "Amber",
+                    "price": "$3500",
+                    "strike": "$5000",
+                },
+                {
+                    // pro3
+                    "overlayHeading": "Minimal Green Amber Bracelet",
+                    "discount": "30%",
+                    "title": "Minimal Green Amber Bracelet",
+                    "shortDescription": `A gorgeous and elegant bracelet. Featuring a fine minimalist sterling silver frame decorated with bright baltic amber.`,
+                    "downloadFile": "document/Amber/Minimal Green Amber Bracelet.docx",
+                    "downloadFileName": "Minimal Green Amber Bracelet.docx",
+                    "image": "images/Amber/Minimal Green Amber Bracelet.webp",
+                    "category": "Amber",
+                    "price": "$4900",
+                    "strike": "$7000",
+                },
+
+
+            ]
+
+        };
+
+        function generateProductCardsA() {
+            var productContainer = document.getElementById('product-container-Amethyst');
+            for (var i = 0; i < productData.productsA.length; i++) {
+                var product = productData.productsA[i];
+                var productCard = `
+                    <div class="col-md-4 mt-2 mb-2">
+                        <div class="card">
+                            <div class="card-body b-img">
+                                <div class="cardprod">
+                                     <div class=" fs-4 discount">${product.discount}</div>
+                                    <div class="overlay">
+                                        <h5 class="cardcontent">${product.overlayHeading}</h5>
+                                        <p class="cardcontent">${product.shortDescription}</p>
+                                        <a href="${product.downloadFile}" download="${product.downloadFileName}">
+                                            <button class="btn btn-light">Download Full details <i class="fa-solid fa-download"></i></button>
+                                        </a>
+                                    </div>
+                                    <img src="${product.image}" class="card-img" alt="${product.title}">
+                                    	
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <div class="mb-2">
+                                    <h6 class="font-weight-semibold mb-3">${product.title}</h6>
+                                    <a href="#" class="text-muted">${product.category}</a>
+                                </div>
+                                <h4 class="mb-2 font-weight-semibold"><strike class="mr-5" >${product.strike}</strike> ${product.price}</h4>
+                              
+                                <button type="button" class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#TYS">
+                                    <i class="fa fa-cart-plus mr-2"></i> Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += productCard;
+            }
+        }
+
+        function generateProductCardsD() {
+            var productContainer = document.getElementById('product-container-Diamond');
+            for (var i = 0; i < productData.productsD.length; i++) {
+                var product = productData.productsD[i];
+                var productCard = `
+                    <div class="col-md-4 mt-2 mb-2">
+                        <div class="card">
+                            <div class="card-body b-img">
+                                <div class="cardprod">
+                                     <div class=" fs-4 discount">${product.discount}</div>
+                                    <div class="overlay">
+                                        <h5 class="cardcontent">${product.overlayHeading}</h5>
+                                        <p class="cardcontent">${product.shortDescription}</p>
+                                        <a href="${product.downloadFile}" download="${product.downloadFileName}">
+                                            <button class="btn btn-light">Download Full details <i class="fa-solid fa-download"></i></button>
+                                        </a>
+                                    </div>
+                                    <img src="${product.image}" class="card-img" alt="${product.title}">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <div class="mb-2">
+                                    <h6 class="font-weight-semibold mb-3">${product.title}</h6>
+                                    <a href="#" class="text-muted">${product.category}</a>
+                                </div>
+                                <h4 class="mb-2 font-weight-semibold"><strike class="mr-5" >${product.strike}</strike>  ${product.price}</h4>
+                              
+                                <button type="button" class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#TYS">
+                                    <i class="fa fa-cart-plus mr-2"></i> Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += productCard;
+            }
+        }
+
+        function generateProductCardsAm() {
+            var productContainer = document.getElementById('product-container-Amber');
+            for (var i = 0; i < productData.productsAm.length; i++) {
+                var product = productData.productsAm[i];
+                var productCard = `
+                    <div class="col-md-4 mt-2 mb-2">
+                        <div class="card">
+                            <div class="card-body b-img">
+                                <div class="cardprod">
+                                     <div class=" fs-4 discount">${product.discount}</div>
+                                    <div class="overlay">
+                                        <h5 class="cardcontent">${product.overlayHeading}</h5>
+                                        <p class="cardcontent">${product.shortDescription}</p>
+                                        <a href="${product.downloadFile}" download="${product.downloadFileName}">
+                                            <button class="btn btn-light">Download Full details <i class="fa-solid fa-download"></i></button>
+                                        </a>
+                                    </div>
+                                    <img src="${product.image}" class="card-img" alt="${product.title}">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <div class="mb-2">
+                                    <h6 class="font-weight-semibold mb-3">${product.title}</h6>
+                                    <a href="#" class="text-muted">${product.category}</a>
+                                </div>
+                                <h4 class="mb-2 font-weight-semibold"><strike class="mr-5" >${product.strike}</strike>  ${product.price}</h4>
+                              
+                                <button type="button" class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#TYS">
+                                    <i class="fa fa-cart-plus mr-2"></i> Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += productCard;
+            }
+        }
+
+        // Call the functions to generate product cards
+        generateProductCardsA();
+        generateProductCardsD();
+        generateProductCardsAm();
+
+    </script>
+
+</body>
+
+</html>

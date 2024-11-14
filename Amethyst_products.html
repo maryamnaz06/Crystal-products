@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amethyst Products</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <!-- aos library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/pro_style.css">
+     <!-- header css  -->
+     <link rel="stylesheet" href="css/Index.css">
+</head>
+
+<body>
+     <!-- header  -->
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <span class="text-light me-auto">
+              <i class="bi bi-telephone"></i> +92-300-800345
+            </span>
+            <span class="text-light text-center flex-grow-1">
+              <i class="bi bi-envelope"></i> EmporiumJewellery@gmail.com
+            </span>
+            <ul class="list-unstyled d-flex mb-0">
+              <li class="me-3">
+                <a href="#" class="text-light"><i class="bi bi-heart"></i></a>
+              </li>
+              <li>
+                <a href="#" class="text-light"><i class="bi bi-bag"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <header style="padding-top: 60px;"> <!-- To account for fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+              <img src="images/Index/logo.png" alt="Logo" height="80" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link  ms-3">HOME</a>
+                <div class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle ms-3 active" data-bs-toggle="dropdown"
+                    aria-expanded="false">PRODUCTS</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Diamond_products.html" class="dropdown-item">DIAMOND</a></li>
+                    <li><a href="Amber_products.html" class="dropdown-item">AMBER</a></li>
+                    <li><a href="Amethyst_products.html" class="dropdown-item">AMETHYST</a></li>
+                    <li><a href="Home_Decor_products.html" class="dropdown-item">DECORATIVE PRODUCTS</a></li>
+                  </ul>
+                </div>
+                <a href="special-offers.html" class="nav-item nav-link ms-3">SPECIAL OFFERS</a>
+                <a href="NewArrival.html" class="nav-item nav-link ms-3">NEW ARRIVAL</a>
+                <a href="about.html" class="nav-item nav-link ms-3">ABOUT US</a>
+                <a href="contact_us.html" class="nav-item nav-link ms-3">CONTACT US</a>
+                <a href="comparison.html" class="nav-item nav-link ms-3">COMPARISON</a>
+              </div>
+    
+              <div class="d-flex align-items-center ms-3">
+                <div class="search">
+                  <input type="text" class="form-control me-2" placeholder="Search..">
+                  <button class="btn" type="button">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+
+     <!-- Header end  -->
+
+
+        <!-- Filterable  -->
+        <main class="main-container">
+            <div class="button-group mt-5">
+                <a href="#">
+                    <button class="buton-active" data-filter="#item-necklace">All</button>
+                </a>
+                <a href="#Amethyst_Necklace"> <button class="buton"
+                        data-filter="#product-container-Necklace">Necklace</button> </a>
+                <a href="#Amethyst_Earrings"><button class="buton"
+                        data-filter="#product-container-Earrings">Earings</button></a>
+                <a href="#Amethyst_Bracelete"> <button class="buton" data-filter="">Bracelet</button></a>
+            </div>
+        </main>
+    <div class="container">
+        <div class="row mt-5 mb-2" id="product-container-Necklace">
+            <h3 class="text-center" id="Amethyst_Necklace">Amethyst Necklace</h3>
+            <!-- Product cards will be dynamically inserted here -->
+        </div>
+
+        <div class="row mt-5 mb-2" id="product-container-Earrings">
+           <h3 class="text-center" id="Amethyst_Earrings">Amethyst Earrings</h3>
+            <!-- Product cards will be dynamically inserted here -->
+        </div>
+
+        <div class="row mt-5 mb-2" id="product-container-Bracelete">
+           <h3 class="text-center" id="Amethyst_Bracelete">Amethyst Bracelete</h3>
+            <!-- Product cards will be dynamically inserted here -->
+        </div>
+
+    </div>
+    <!-- Modal Code start   -->
+    <div class="modal fade" id="TYS" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="modalLabel">Thank You for Shopping</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Code end   -->
+      <!-- Footer start  -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4 text-center">
+          <div class="row">
+            <!-- Company info -->
+    
+            <div class="col-lg-3 ">
+    
+              <div class="d-flex align-items-center justify-content-center mx-auto" style="width: 100px; height: 80px;">
+                <img src="images/Index/logo2.png" height="70" alt="" loading="lazy" />
+              </div>
+    
+              <p class="text-center">The Diamond Collection illustrates a tale of legacy and passion. Our heritage
+                draws its roots from pre-partition times in Delhi, India, where our ancestors attained fame for
+                their craftsmanship in gold and diamond jewelry making.
+              </p>
+    
+            </div>
+    
+    
+            <!-- social media -->
+            <div class="col-lg-3 mb-0 mt-2 text-center footer_text">
+              <h5 class="text-uppercase mb-2">SERVICES</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-3"> <a href="#" class="text-dark text-start">
+                    Bespoke Designing</a></li>
+                <li class="mb-3"> <a href="#" class="text-dark text-start">
+                    Free Instant Cleaning Service</a></li>
+                <li class="mb-3"> <a href="#" class="text-dark text-start">
+                    Jewellery Polishing Services</a></li>
+                <li class="mb-3"> <a href="#" class="text-dark text-start">
+                    Jewellery Repairing Services</a></li>
+    
+              </ul>
+            </div>
+    
+            <!-- quick links -->
+            <div class="col-lg-3 mb-4 mt-2  text-center">
+              <h5 class="text-uppercase mb-4">CONTACT US</h5>
+    
+              <ul class="list-unstyled">
+                <li>
+                  <p><i class="fas fa-phone pe-2" style="color: #ad9551;"></i>+92-300-800345</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope pe-2 mb-0 " style="color: #ad9551;"></i>EmporiumJewellery@gmail.com</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-map-marker-alt pe-2" style="color: #ad9551;"></i>Warsaw streeet G-23,millenium mall,
+                    Poland</p>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="col-lg-3 mb-4 mt-2  text-center footer_text">
+              <h5 class="text-uppercase mb-3">Quick Links</h5>
+              <ul class="list-unstyled mb-0 ">
+                <li class="mb-3"> <a href="Sitemap.html" class="text-dark">SIteMap</a></li>
+                <li class="mb-3"> <a href="about.html" class="text-dark">About Us</a></li>
+                <li class="mb-3"> <a href="contact_us.html" class="text-dark">Contact Us</a></li>
+                <li class="mb-3"> <a href="comparison.html" class="text-dark">Comparison</a></li>
+                <li class="mb-3"> <a href="FAQ.html" class="text-dark"> FAQ</a></li>
+    
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="text-center p-3 bg-dark text-white">Copyright &copy;. All Right Reserved. Emporium Crystal Jewellery
+        </div>
+    
+      </footer>
+     <!-- Footer end  -->
+
+
+
+
+    <script>
+        var productData = {
+            "productsN": [
+                {
+                    //pro 1
+                    "overlayHeading": "Pear Shape Amethyst and Diamond Pendant Necklace 14K Yellow Gold",
+                    "title": "Pear Shape Amethyst and Diamond Pendant Necklace 14K Yellow Gold",
+                    "shortDescription": `Our natural Amethyst gemstones are a unique gift from nature.`,
+                    "downloadFile": "document/Amethyst/Pear Shape Amethyst and Diamond Pendant Necklace 14K Yellow Gold.docx",
+                    "downloadFileName": "Pear Shape Amethyst and Diamond Pendant Necklace 14K Yellow Gold.docx",
+                    "image": "images/Amethyst/Pear Shape Amethyst and Diamond Pendant Necklace 14K Yellow Gold.webp",
+                    "category": "Amethyst",
+                    "price": "$6000",
+                },
+                {
+                    //pro 2
+                    "overlayHeading": `A late Victorian graduated amethyst rivière necklace`,
+                    "title": `A late Victorian graduated amethyst rivière necklace`,
+                    "shortDescription": `Bold and beautiful, this amethyst and 14 karat yellow gold necklace.`,
+                    "downloadFile": `document/Amethyst/A late Victorian graduated amethyst rivière necklace.docx`,
+                    "downloadFileName": `A late Victorian graduated amethyst rivière necklace.docx`,
+                    "image": "images/Amethyst/A late Victorian graduated amethyst rivière necklace.webp",
+                    "category": "Amethyst",
+                    "price": "$7000",
+                },
+                {
+                    //pro 3
+                    "overlayHeading": "Natural Amethyst Diana Pendant",
+                    "title": "Natural Amethyst Diana Pendant",
+                    "shortDescription": `Experience elegance with the Princess Diana Amethyst Pendant.`,
+                    "downloadFile": "document/Amethyst/Natural Amethyst Diana Pendant.docx",
+                    "downloadFileName": ".Natural Amethyst Diana Pendant docx",
+                    "image": "images/Amethyst/Natural Amethyst Diana Pendant.webp",
+                    "category": "Amethyst",
+                    "price": "$8000",
+                },
+                {
+                    //pro 4
+                    "overlayHeading": "Amethyst Pendant Necklace 14K Yellow Gold Princess Cut 2 Carats",
+                    "title": "Amethyst Pendant Necklace 14K Yellow Gold Princess Cut 2 Carats",
+                    "shortDescription": `Our natural Amethyst gemstones are a unique gift from nature. `,
+                    "downloadFile": "document/Amethyst/Amethyst Pendant Necklace 14K Yellow Gold Princess Cut 2 Carats.docx",
+                    "downloadFileName": "Amethyst Pendant Necklace 14K Yellow Gold Princess Cut 2 Carats.docx",
+                    "image": "images/Amethyst/Amethyst Pendant Necklace 14K Yellow Gold Princess Cut 2 Carats.webp",
+                    "category": "Amethyst",
+                    "price": "$1200",
+                },
+                {
+                    //pro 5
+                    "overlayHeading": "Natural Amethyst With Pearl Necklace",
+                    "title": "Natural Amethyst With Pearl Necklace",
+                    "shortDescription": `Experience elegance with this Natural Amethyst with Pearl necklace.`,
+                    "downloadFile": "document/Amethyst/Natural Amethyst With Pearl Necklace.docx",
+                    "downloadFileName": "Natural Amethyst With Pearl Necklace.docx",
+                    "image": "images/Amethyst/Natural Amethyst With Pearl Necklace.webp",
+                    "category": "Amethyst",
+                    "price": "$8000",
+                },
+                {
+                    //pro 6
+                    "overlayHeading": "14K White Gold Amethyst Pendant Dual Halo Design 1.00 Carats",
+                    "title": "14K White Gold Amethyst Pendant Dual Halo Design 1.00 Carats",
+                    "shortDescription": `A beautiful 7x5mm oval shaped amethyst and diamond pendant necklace set in a 14K yellow gold basket setting.`,
+                    "downloadFile": "document/Amethyst/14K White Gold Amethyst Pendant Dual Halo Design 1.00 Carats.docx",
+                    "downloadFileName": "14K White Gold Amethyst Pendant Dual Halo Design 1.00 Carats.docx",
+                    "image": "images/Amethyst/14K White Gold Amethyst Pendant Dual Halo Design 1.00 Carats.webp",
+                    "category": "Amethyst",
+                    "price": "$3000",
+                },
+            ],
+
+            "productsE": [
+                {
+                    //pro 1
+                    "title": "Sterling Silver Amethyst 5mm Round Framed Drop Earrings",
+
+                    "overlayHeading": "Sterling Silver Amethyst 5mm Round Framed Drop Earrings",
+                    "title": "Sterling Silver Amethyst 5mm Round Framed Drop Earrings",
+                    "shortDescription": `A beautiful set of two Sterling Silver drop earrings decorated with a single 5mm Amethyst in the center.`,
+                    "downloadFile": "document/Amethyst/Sterling Silver Amethyst 5mm Round Framed Drop Earrings.docx",
+                    "downloadFileName": "Sterling Silver Amethyst 5mm Round Framed Drop Earrings.docx",
+                    "image": "images/Amethyst/Sterling Silver Amethyst 5mm Round Framed Drop Earrings.webp",
+                    "category": "Amethyst",
+                    "price": "$5000",
+                },
+                {
+                    //pro 2
+                    "overlayHeading": "Sterling Silver Amethyst Teardrop Leaf Drop Earrings",
+                    "title": "Sterling Silver Amethyst Teardrop Leaf Drop Earrings",
+                    "shortDescription": `These beautiful leaf style Drop Earrings finished in Sterling Silver, feature a fine hand-picked Amethyst Gemstone.`,
+                    "downloadFile": "document/Amethyst/Sterling Silver Amethyst Teardrop Leaf Drop Earrings.docx",
+                    "downloadFileName": "Sterling Silver Amethyst Teardrop Leaf Drop Earrings.docx",
+                    "image": "images/Amethyst/Sterling Silver Amethyst Teardrop Leaf Drop Earrings.webp",
+                    "category": "Amethyst",
+                    "price": "$4000",
+                },
+                {
+                    //pro 3
+                    "overlayHeading": "Sterling Silver Amethyst Feather Drop Earrings",
+                    "title": "Sterling Silver Amethyst Feather Drop Earrings",
+                    "shortDescription": `Beautiful Contemporary style Earrings in Sterling Silver detailed feather design, precision set with Amethyst Gemstones.`,
+                    "downloadFile": "document/Amethyst/Sterling Silver Amethyst Feather Drop Earrings.docx",
+                    "downloadFileName": "Sterling Silver Amethyst Feather Drop Earrings.docx",
+                    "image": "images/Amethyst/Sterling Silver Amethyst Feather Drop Earrings.webp",
+                    "category": "Amethyst",
+                    "price": "$7000",
+                },
+                {
+                    //pro 4
+                    "overlayHeading": "9ct Yellow Gold Cushion Amethyst & Diamond Cluster Earrings",
+                    "title": "9ct Yellow Gold Cushion Amethyst & Diamond Cluster Earrings",
+                    "shortDescription": `A stunning pair of cushion Amethyst earrings set perfectly into a classic 9ct Yellow gold claw set setting surrounded by a cluster of high quality diamonds.
+                    `,
+                    "downloadFile": "document/Amethyst/9ct Yellow Gold Cushion Amethyst & Diamond Cluster Earrings.docx",
+                    "downloadFileName": "9ct Yellow Gold Cushion Amethyst & Diamond Cluster Earrings.docx",
+                    "image": "images/Amethyst/9ct Yellow Gold Cushion Amethyst & Diamond Cluster Earrings.webp",
+                    "category": "Amethyst",
+                    "price": "$3000",
+                },
+                {
+                    //pro 5
+                    "overlayHeading": "9ct Yellow Gold 3mm Rubover Amethyst Stud Earrings",
+                    "title": "9ct Yellow Gold 3mm Rubover Amethyst Stud Earrings",
+                    "shortDescription": `A stunning pair of Amethyst earrings set perfectly into a classic 9ct Yellow gold rub over setting.`,
+                    "downloadFile": "document/Amethyst/9ct Yellow Gold 3mm Rubover Amethyst Stud Earrings.docx",
+                    "downloadFileName": "9ct Yellow Gold 3mm Rubover Amethyst Stud Earrings.docx",
+                    "image": "images/Amethyst/9ct Yellow Gold 3mm Rubover Amethyst Stud Earrings.webp",
+                    "category": "Amethyst",
+                    "price": "$8200",
+                },
+                {
+                    //pro 6
+                    "overlayHeading": "Round Amethyst and Diamond Stud Earrings in 14k White Gold",
+                    "title": "Round Amethyst and Diamond Stud Earrings in 14k White Gold",
+                    "shortDescription": `These amethyst and diamond halo earrings combine colorful round gemstones with classic diamonds for a beautiful pairing. `,
+                    "downloadFile": "document/Amethyst/Round Amethyst and Diamond Stud Earrings in 14k White Gold.docx",
+                    "downloadFileName": "Round Amethyst and Diamond Stud Earrings in 14k White Gold.docx",
+                    "image": "images/Amethyst/Round Amethyst and Diamond Stud Earrings in 14k White Gold.jpg",
+                    "category": "Amethyst",
+                    "price": "$5600",
+                },
+            ],
+
+
+            "productsB": [
+                {
+                    //pro 1
+                    "overlayHeading": "Amethyst and Diamond 259.00 Carat Bracelet",
+                    "title": "Amethyst and Diamond 259.00 Carat Bracelet",
+                    "shortDescription": `Grab everyone's attention with this 18 karat yellow gold bracelet comprised of 259 carats of carved amethyst beads.`,
+                    "downloadFile": "document/Amethyst/Amethyst and Diamond 259.00 Carat Bracelet.docx",
+                    "downloadFileName": "Amethyst and Diamond 259.00 Carat Bracelet.docx",
+                    "image": "images/Amethyst/Amethyst and Diamond 259.00 Carat Bracelet.webp",
+                    "category": "Amethyst",
+                    "price": "$4400",
+                },
+                {
+                    //pro 2
+                    "overlayHeading": "Amethyst 500.88 Carat Bracelet",
+                    "title": "Amethyst 500.88 Carat Bracelet",
+                    "shortDescription": `Definitely a conversation piece, this bold 18 karat yellow gold Amethyst bracelet`,
+                    "downloadFile": "document/Amethyst/Amethyst 500.88 Carat Bracelet.docx",
+                    "downloadFileName": "Amethyst 500.88 Carat Bracelet.docx",
+                    "image": "images/Amethyst/Amethyst 500.88 Carat Bracelet.webp",
+                    "category": "Amethyst",
+                    "price": "$5600",
+                },
+                {
+                    //pro 3
+                    "overlayHeading": "Essentials Sterling Silver Created Gemstones Bracelet",
+                    "title": "Essentials Sterling Silver Created Gemstones Bracelet",
+                    "shortDescription": `STYLE: Stunning bracelet featuring clusters of pear cut genuine pink and purple amethyst stones with genuine round white topaz accent stones set in sterling silver`,
+                    "downloadFile": "document/Amethyst/Essentials Sterling Silver Created Gemstones Bracelet.docx",
+                    "downloadFileName": "Essentials Sterling Silver Created Gemstones Bracelet.docx",
+                    "image": "images/Amethyst/Essentials Sterling Silver Created Gemstones Bracelet.jpg",
+                    "category": "Amethyst",
+                    "price": "$7000",
+                },
+                {
+                    //pro 4
+                    "overlayHeading": "Aurora Splendiferous Bracelet with Natural Amethyst and Cubic Zirconia",
+                    "title": "Aurora Splendiferous Bracelet with Natural Amethyst and Cubic Zirconia",
+                    "shortDescription": `This sterling silver bangle-shaped bracelet showcases a modern design, featuring emerald-shaped natural amethyst stones brilliantly set with cubic zirconia on the sides`,
+                    "downloadFile": "document/Amethyst/Aurora Splendiferous Bracelet with Natural Amethyst and Cubic Zirconia.docx",
+                    "downloadFileName": "Aurora Splendiferous Bracelet with Natural Amethyst and Cubic Zirconia.docx",
+                    "image": "images/Amethyst/Aurora Splendiferous Bracelet with Natural Amethyst and Cubic Zirconia.webp",
+                    "category": "Amethyst",
+                    "price": "$6500",
+                },
+                {
+                    //pro 5
+                    "overlayHeading": "PEORA Amethyst Teardrop Tennis Bracelet for Women",
+                    "title": "PEORA Amethyst Teardrop Tennis Bracelet for Women",
+                    "shortDescription": `PEORA QUALITY GENUINE AMETHYST - Cut from the finest gemstones, 7.75 Carats, Pear Shape, 6x4mm, 24 pieces, deep Purple hue with a brilliant sparkle.`,
+                    "downloadFile": "document/Amethyst/PEORA Amethyst Teardrop Tennis Bracelet for Women.docx",
+                    "image": "images/Amethyst/PEORA Amethyst Teardrop Tennis Bracelet for Women.jpg",
+                    "category": "Amethyst",
+                    "price": "$6000",
+                },
+                {
+                    //pro 6
+                    "overlayHeading": "Natural Amethyst bracelet 18K White Gold Plated",
+                    "title": "Natural Amethyst bracelet 18K White Gold Plated",
+                    "shortDescription": `Amethyst bracelet 18K White Gold Plated, Amethyst Tennis Bracelet for Women, Wedding Bracelet, Gift For Her, Sterling Silver Tennis Bracelet`,
+                    "downloadFile": "document/Amethyst/Natural Amethyst bracelet 18K White Gold Plated.docx",
+                    "downloadFileName": "Natural Amethyst bracelet 18K White Gold Plated.docx",
+                    "image": "images/Amethyst/Natural Amethyst bracelet 18K White Gold Plated.png",
+                    "category": "Amethyst",
+                    "price": "$6000",
+                },
+            ]
+
+        };
+
+        function generateProductCardsN() {
+            var productContainer = document.getElementById('product-container-Necklace');
+            for (var i = 0; i < productData.productsN.length; i++) {
+                var product = productData.productsN[i];
+                var productCard = `
+                    <div class="col-md-4 mt-2 mb-2">
+                        <div class="card">
+                            <div class="card-body b-img">
+                                <div class="cardprod">
+                                    <div class="overlay">
+                                        <h5 class="cardcontent">${product.overlayHeading}</h5>
+                                        <p class="cardcontent">${product.shortDescription}</p>
+                                        <a href="${product.downloadFile}" download="${product.downloadFileName}">
+                                            <button class="btn btn-light">Download Full details <i class="fa-solid fa-download"></i></button>
+                                        </a>
+                                    </div>
+                                    <img src="${product.image}" class="card-img" alt="${product.title}">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <div class="mb-2">
+                                    <h6 class="font-weight-semibold mb-3">${product.title}</h6>
+                                    <a href="#" class="text-muted">${product.category}</a>
+                                </div>
+                                <h4 class="mb-2 font-weight-semibold">${product.price}</h4>
+                              
+                                <button type="button" class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#TYS">
+                                    <i class="fa fa-cart-plus mr-2"></i> Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += productCard;
+            }
+        }
+
+        function generateProductCardsE() {
+            var productContainer = document.getElementById('product-container-Earrings');
+            for (var i = 0; i < productData.productsE.length; i++) {
+                var product = productData.productsE[i];
+                var productCard = `
+                    <div class="col-md-4 mt-2 mb-2">
+                        <div class="card">
+                            <div class="card-body b-img">
+                                <div class="cardprod">
+                                    <div class="overlay">
+                                        <h5 class="cardcontent">${product.overlayHeading}</h5>
+                                        <p class="cardcontent">${product.shortDescription}</p>
+                                        <a href="${product.downloadFile}" download="${product.downloadFileName}">
+                                            <button class="btn btn-light">Download Full details <i class="fa-solid fa-download"></i></button>
+                                        </a>
+                                    </div>
+                                    <img src="${product.image}" class="card-img" alt="${product.title}">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <div class="mb-2">
+                                    <h6 class="font-weight-semibold mb-3">${product.title}</h6>
+                                    <a href="#" class="text-muted">${product.category}</a>
+                                </div>
+                                <h4 class="mb-2 font-weight-semibold">${product.price}</h4>
+                              
+                                <button type="button" class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#TYS">
+                                    <i class="fa fa-cart-plus mr-2"></i> Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += productCard;
+            }
+        }
+
+        function generateProductCardsB() {
+            var productContainer = document.getElementById('product-container-Bracelete');
+            for (var i = 0; i < productData.productsB.length; i++) {
+                var product = productData.productsB[i];
+                var productCard = `
+                    <div class="col-md-4 mt-2 mb-2">
+                        <div class="card">
+                            <div class="card-body b-img">
+                                <div class="cardprod">
+                                    <div class="overlay">
+                                        <h5 class="cardcontent">${product.overlayHeading}</h5>
+                                        <p class="cardcontent">${product.shortDescription}</p>
+                                        <a href="${product.downloadFile}" download="${product.downloadFileName}">
+                                            <button class="btn btn-light">Download Full details <i class="fa-solid fa-download"></i></button>
+                                        </a>
+                                    </div>
+                                    <img src="${product.image}" class="card-img" alt="${product.title}">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <div class="mb-2">
+                                    <h6 class="font-weight-semibold mb-3">${product.title}</h6>
+                                    <a href="#" class="text-muted">${product.category}</a>
+                                </div>
+                                <h4 class="mb-2 font-weight-semibold">${product.price}</h4>
+                              
+                                <button type="button" class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#TYS">
+                                    <i class="fa fa-cart-plus mr-2"></i> Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += productCard;
+            }
+        }
+
+        // Call the functions to generate product cards
+        generateProductCardsN();
+        generateProductCardsE();
+        generateProductCardsB();
+
+    </script>
+
+</body>
+
+</html>

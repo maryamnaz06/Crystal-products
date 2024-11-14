@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+    background:#ad9551;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 50px;
+    
+}
+/* Custom styles */
+.nav-item {
+    color: #000;
+    font-size: 17px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.active {
+    color: #ad9551 !important;
+}
+
+.nav-item:hover,
+.nav-link:hover {
+    color: #ad9551;
+}
+
+.dropdown-item:hover {
+    background: #ad9551;
+    color: #fff;
+}
+
+.dropdown-menu {
+    background: url('dropdown_pic.jpg');
+}
+
+
+
+.search {
+    position: relative;
+    display: flex;
+    /* Use flexbox for alignment */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.search input {
+    height: 40px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4;
+    width: 200px;
+}
+
+.search input:focus,
+.form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid #ad9551;
+}
+
+.search button {
+    height: 40px;
+    /* Match the height of the input */
+    background: #ad9551;
+    /* Set the background color to #ad9551 */
+    color: #fff;
+    /* Text color */
+    margin-left: -2px;
+    /* To avoid double border */
+}
+
+.search button:hover {
+    background: #fff;
+    /* Change background on hover */
+    color: #ad9551;
+    /* Change text color on hover */
+    border: 1px solid #ad9551;
+    /* Add border on hover */
+}
+a {
+    text-decoration: none !important;
+}
+/* carousel slider  */
+#myCarousel {
+    position: relative;
+    background: url(carousel_background_pic.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#myCarousel .carousel-item {
+    height: 100vh;
+    /* Full viewport height */
+    min-height: 550px;
+    /* Keep the minimum height */
+    transition: none;
+    /* Remove opacity transition */
+    display: none;
+    /* Start hidden */
+}
+
+#myCarousel .active {
+    display: block;
+    /* Show active slide */
+}
+
+#myCarousel .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* Add padding for small screens */
+}
+
+#myCarousel h4 {
+    font-size: 2.5rem;
+    /* Responsive font size */
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+#myCarousel p {
+    font-size: 1.125rem;
+    /* Responsive font size */
+    margin-bottom: 15px;
+    color: black;
+}
+
+#myCarousel .carousel-item a {
+    background: #ad9551;
+    font-size: 1rem;
+    /* Responsive font size */
+    color: #FFF;
+    padding: 13px 32px;
+    text-decoration: none;
+}
+
+#myCarousel .carousel-item a:hover {
+    background: #fff;
+    color: #ad9551;
+    border: 1px solid #ad9551;
+}
+
+#myCarousel img {
+    animation-fill-mode: both;
+    animation-duration: 4s;
+    /* Duration of the animation */
+    width: 70%;
+    /* Adjust image width */
+    max-width: 300px;
+    /* Maximum width for images */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    height: 40px;
+    width: 80px;
+    top: 50%;
+    background-color: #ad9551;
+    text-decoration: none;
+}
+
+/* About us  */
+.button {
+    background: #ad9551;
+    font-size: 1.2rem;
+    /* Responsive font size */
+    color: #FFF;
+    padding: 12px 32px;
+    border: none;
+
+}
+
+.button:hover {
+    background: #fff;
+    color: #ad9551;
+    border: 1px solid #ad9551;
+}
+
+/* scrollslider */
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    /* Background color (optional) */
+    white-space: nowrap;
+    /* Keeps all content in a single line */
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.scroll-content span h1{
+    font-size: 35px;
+} 
+.scroll-content {
+    display: flex;
+    align-items: center;
+    animation: scroll-left 10s linear infinite;
+    /* font-family: Arial, sans-serif; */
+    width: 200%;
+    font-family: "Headland One", serif;
+    font-weight: 400;
+  font-style: normal;
+    /* Adjust to ensure smooth scrolling */
+}
+
+.scroll-content span {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+    /* Space between items (adjust as needed) */
+    font-size: 1.5rem;
+    /* Adjust font size */
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.scroll-content h1,
+.scroll-content h3 {
+    margin: 0;
+}
+  
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media screen and (max-width: 800px) {
+    .flex-container {
+      width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container {
+      width: 90%;
+    }
+}
+
+
+
+
+
+/* categories  */
+.h-100 {
+    /* height: 100%!important; */
+    overflow: hidden;
+}
+
+.box-hover {
+    min-height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cover-background {
+    position: relative !important;
+    background-size: cover !important;
+    overflow: hidden !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.margin-30px-bottom {
+    margin-bottom: 30px;
+}
+
+.bg-img {
+    overflow: hidden;
+}
+
+.bg-img:hover {
+    transform: scale(1.1);
+}
+
+/* product section  */
+.overlay_c {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    /* transition: .5s ease; */
+    /* background-color: #ad9551; */
+}
+
+.card:hover .overlay_c {
+    opacity: 0.8;
+    background-color: #ad9551;
+    
+}
+
+.text {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1 !important;
+}
+
+.footer_text a:hover {
+    text-decoration: underline !important;;
+    color: #ad9551 !important;
+    font-size: 17px !important;
+    font-weight: 700px !important;
+  
+}
+

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystals</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <!-- aos library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/pro_style.css">
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="css/Index.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <span class="text-light me-auto">
+                    <i class="bi bi-telephone"></i> +92-300-800345
+                </span>
+                <span class="text-light text-center flex-grow-1">
+                    <i class="bi bi-envelope"></i> EmporiumJewellery@gmail.com
+                </span>
+                <ul class="list-unstyled d-flex mb-0">
+                    <li class="me-3">
+                        <a href="#" class="text-light"><i class="bi bi-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-light"><i class="bi bi-bag"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header style="padding-top: 60px;"> <!-- To account for fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="images/Index/logo.png" alt="Logo" height="80" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link  ms-3">HOME</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle ms-3 active" data-bs-toggle="dropdown"
+                                aria-expanded="false">PRODUCTS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Diamond_products.html" class="dropdown-item">DIAMOND</a></li>
+                                <li><a href="Amber_products.html" class="dropdown-item">AMBER</a></li>
+                                <li><a href="Amethyst_products.html" class="dropdown-item">AMETHYST</a></li>
+                                <li><a href="Home_Decor_products.html" class="dropdown-item">DECORATIVE PRODUCTS</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="special-offers.html" class="nav-item nav-link ms-3">SPECIAL OFFERS</a>
+                        <a href="NewArrival.html" class="nav-item nav-link ms-3">NEW ARRIVAL</a>
+                        <a href="about.html" class="nav-item nav-link ms-3">ABOUT US</a>
+                        <a href="contact_us.html" class="nav-item nav-link ms-3">CONTACT US</a>
+                        <a href="comparison.html" class="nav-item nav-link ms-3">COMPARISON</a>
+                    </div>
+
+                    <div class="d-flex align-items-center ms-3">
+                        <div class="search">
+                            <input type="text" class="form-control me-2" placeholder="Search..">
+                            <button class="btn" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end  -->
+    <div class="container">
+        <div class="row mt-5 mb-2" id="product-container-Necklace">
+            <h3 class="text-center fs-1 mb-3">Home Decorative</h3>
+            <!-- Product cards will be dynamically inserted here -->
+        </div>
+
+    </div>
+    <!-- Modal Code start   -->
+    <div class="modal fade" id="TYS" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="modalLabel">Thank You for Shopping</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Code end   -->
+    <!-- footer start  -->
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="container p-4 text-center">
+            <div class="row">
+                <!-- Company info -->
+
+                <div class="col-lg-3 ">
+
+                    <div class="d-flex align-items-center justify-content-center mx-auto"
+                        style="width: 100px; height: 80px;">
+                        <img src="images/Index/logo2.png" height="70" alt="" loading="lazy" />
+                    </div>
+
+                    <p class="text-center">The Diamond Collection illustrates a tale of legacy and passion. Our heritage
+                        draws its roots from pre-partition times in Delhi, India, where our ancestors attained fame for
+                        their craftsmanship in gold and diamond jewelry making.
+                    </p>
+
+                </div>
+
+
+                <!-- social media -->
+                <div class="col-lg-3 mb-0 mt-2 text-center footer_text">
+                    <h5 class="text-uppercase mb-2">SERVICES</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-3"> <a href="#" class="text-dark text-start">
+                                Bespoke Designing</a></li>
+                        <li class="mb-3"> <a href="#" class="text-dark text-start">
+                                Free Instant Cleaning Service</a></li>
+                        <li class="mb-3"> <a href="#" class="text-dark text-start">
+                                Jewellery Polishing Services</a></li>
+                        <li class="mb-3"> <a href="#" class="text-dark text-start">
+                                Jewellery Repairing Services</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- quick links -->
+                <div class="col-lg-3 mb-4 mt-2  text-center">
+                    <h5 class="text-uppercase mb-4">CONTACT US</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p><i class="fas fa-phone pe-2" style="color: #ad9551;"></i>+92-300-800345</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-envelope pe-2 mb-0 "
+                                    style="color: #ad9551;"></i>EmporiumJewellery@gmail.com</p>
+                        </li>
+                        <li>
+                            <p><i class="fas fa-map-marker-alt pe-2" style="color: #ad9551;"></i>Warsaw streeet
+                                G-23,millenium mall,
+                                Poland</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 mb-4 mt-2  text-center footer_text">
+                    <h5 class="text-uppercase mb-3">Quick Links</h5>
+                    <ul class="list-unstyled mb-0 ">
+                        <li class="mb-3"> <a href="Sitemap.html" class="text-dark">SIteMap</a></li>
+                        <li class="mb-3"> <a href="about.html" class="text-dark">About Us</a></li>
+                        <li class="mb-3"> <a href="contact_us.html" class="text-dark">Contact Us</a></li>
+                        <li class="mb-3"> <a href="comparison.html" class="text-dark">Comparison</a></li>
+                        <li class="mb-3"> <a href="FAQ.html" class="text-dark"> FAQ</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center p-3 bg-dark text-white">Copyright &copy;. All Right Reserved. Emporium Crystal Jewellery
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        var productData = {
+            "products_Home_D": [
+                {
+                    //pro 1
+                    "overlayHeading": "Crystal Lotus Flower",
+                    "title": "Crystal Lotus Flower",
+                    "shortDescription": `Crystal Decor, exquisite workmanship, is a way to beautify your personal space and is the perfect decoration for a home, office, library, canteen, coffee shop, tea room, hotel decoration, and any other place`,
+                    "downloadFile": "document/Home_Decor/Crystal Lotus Flower.docx",
+                    "downloadFileName": "Crystal Lotus Flower.docx",
+                    "image": "images/Home_Decor/Crystal Lotus Flower.jpg",
+                    "category": "Home Decorative",
+                    "price": "$3000",
+
+                },
+                {
+                    //pro 2
+                    "overlayHeading": "Crystal decorative fruit stand",
+                    "title": "Crystal decorative fruit stand",
+                    "shortDescription": `2-tier crystal gold plated decorative serving stand`,
+                    "downloadFile": "document/Home_Decor/Crystal decorative fruit stand.docx",
+                    "downloadFileName": "Crystal decorative fruit stand.docx",
+                    "image": "images/Home_Decor/Crystal decorative fruit stand.jpg",
+                    "category": "Home Decorative",
+                    "price": "$5000",
+                },
+                {
+                    //pro 3
+                    "overlayHeading": "Brass Deer on Marble Base with Calcite and Kyanite",
+                    "title": "Brass Deer on Marble Base with Calcite and Kyanite",
+                    "shortDescription": `This unique, expertly crafted Brass Deer on Marble Base is a one-of-a-kind piece featuring stunning Calcite and Kyanite accents`,
+                    "downloadFile": "document/Home_Decor/Brass Deer on Marble Base with Calcite and Kyanite.docx",
+                    "downloadFileName": "Brass Deer on Marble Base with Calcite and Kyanite.docx",
+                    "image": "images/Home_Decor/Brass Deer on Marble Base with Calcite and Kyanite.jpg",
+                    "category": "Home Decorative",
+                    "price": "$9000",
+                },
+                {
+                    //pro 4
+                    "overlayHeading": "Home Decor Crystal Lotus Flower",
+                    "title": "Home Decor Crystal Lotus Flower",
+                    "shortDescription": `Home Decor Items Positive Energy fengshui Crystal Lotus Flower`,
+                    "downloadFile": "document/Home_Decor/Home Decor Crystal Lotus Flower.docx",
+                    "downloadFileName": "Home Decor Crystal Lotus Flower.docx",
+                    "image": "images/Home_Decor/Home Decor Crystal Lotus Flower.jpg",
+                    "category": "Home Decorative",
+                    "price": "$12000",
+                },
+                {
+                    //pro 5
+                    "overlayHeading": "Marble Jewelry Box with Quartz Cluster ",
+                    "title": "Marble Jewelry Box with Quartz Cluster",
+                    "shortDescription": `This elegant marble jewelry box is expertly hand-crafted, adding a touch of sophistication to any dressing table. `,
+                    "downloadFile": " document/Home_Decor/Marble Jewelry Box with Quartz Cluster.docx",
+                    "downloadFileName": "Marble Jewelry Box with Quartz Cluster.docx",
+                    "image": "images/Home_Decor/Marble Jewelry Box with Quartz Cluster.webp",
+                    "category": "Home Decorative",
+                    "price": "$4000",
+                },
+                {
+                    //pro 6
+                    "overlayHeading": "Clear Crystal Hanging Ball",
+                    "title": "Clear Crystal Hanging Ball",
+                    "shortDescription": `The crystal ball prism uses K9 advanced material, which has high refractive index and stronger transparency`,
+                    "downloadFile": "document/Home_Decor/Clear Crystal Hanging Ball.docx",
+                    "downloadFileName": "Clear Crystal Hanging Ball.docx",
+                    "image": "images/Home_Decor/Clear Crystal Hanging Ball.jpg",
+                    "category": "Home Decorative",
+                    "price": "$6500",
+                },
+                {
+                    //pro 7
+                    "overlayHeading": "Stylish Candle Holder",
+                    "title": "Stylish Candle Holder",
+                    "shortDescription": `This beautifully designed piece made of high-quality metal and crystal can add glamour to any space. `,
+                    "downloadFile": "document/Home_Decor/Stylish Candle Holder.docx",
+                    "downloadFileName": "Stylish Candle Holder.docx",
+                    "image": "images/Home_Decor/Stylish Candle Holder.jpg",
+                    "category": "Home Decorative",
+                    "price": "$3200",
+                },
+                {
+                    //pro 8
+                    "overlayHeading": "Brass Dragon on Selenite Slice",
+                    "title": "Brass Dragon on Selenite Slice",
+                    "shortDescription": `This Brass Dragon on Selenite Slice is a stunning and unique hand-crafted piece that is sure to make a statement`,
+                    "downloadFile": "document/Home_Decor/Brass Dragon on Selenite Slice.docx",
+                    "downloadFileName": "Brass Dragon on Selenite Slice.docx",
+                    "image": "images/Home_Decor/Brass Dragon on Selenite Slice.webp",
+                    "category": "Home Decorative",
+                    "price": "$4300",
+                },
+                {
+                    //pro 9
+                    "overlayHeading": "Brass Elephant on Calcite Base",
+                    "title": "Brass Elephant on Calcite Base",
+                    "shortDescription": `Enhance your home decor with our exquisite Brass Elephant on Clear Calcite Base`,
+                    "downloadFile": "document/Home_Decor/Brass Elephant on Calcite Base.docx",
+                    "downloadFileName": "Brass Elephant on Calcite Base.docx",
+                    "image": "images/Home_Decor/Brass Elephant on Calcite Base.webp",
+                    "category": "Home Decorative",
+                    "price": "$2000",
+                },
+            ],
+        };
+
+
+
+
+
+        function generateProductCards_Home_D() {
+            var productContainer = document.getElementById('product-container-Necklace');
+            for (var i = 0; i < productData.products_Home_D.length; i++) {
+                var product = productData.products_Home_D[i];
+                var productCard = `
+                    <div class="col-md-4 mt-2 mb-2">
+                        <div class="card">
+                            <div class="card-body b-img">
+                                <div class="cardprod">
+                                    <div class="overlay">
+                                        <h5 class="cardcontent">${product.overlayHeading}</h5>
+                                        <p class="cardcontent">${product.shortDescription}</p>
+                                        <a href="${product.downloadFile}" download="${product.downloadFileName}">
+                                            <button class="btn btn-light">Download Full details <i class="fa-solid fa-download"></i></button>
+                                        </a>
+                                    </div>
+                                    <img src="${product.image}" class="card-img" alt="${product.title}">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <div class="mb-2">
+                                    <h6 class="font-weight-semibold mb-3">${product.title}</h6>
+                                    <a href="#" class="text-muted">${product.category}</a>
+                                </div>
+                                <h4 class="mb-2 font-weight-semibold">${product.price}</h4>
+                              
+                                <button type="button" class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#TYS">
+                                    <i class="fa fa-cart-plus mr-2"></i> Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                productContainer.innerHTML += productCard;
+            }
+        }
+
+        // Call the functions to generate product cards
+        generateProductCards_Home_D();
+
+    </script>
+
+</body>
+
+</html>
